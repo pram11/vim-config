@@ -1,0 +1,49 @@
+# forEach
+snippet fE
+	${1}.forEach((item,index,array)=>{${2}}
+
+# map
+snippet map
+	${1}.map((item,index,array)=>{
+		${2}
+	}
+
+
+
+# react ~
+
+# react function componentt
+snippet rfc
+	const ${1:FunctionName}:React.FC = (${2:props}) => {
+		${4}
+		return (
+			${3:<></>}
+		);
+	}
+
+# export default react function componnent
+snippet erfc
+	export default const ${1:FunctionName}:React.FC = (${2:props}) => {
+		${4}
+		return (
+			${3:<></>}
+		);
+	}
+
+# import React
+snippet ir
+	import React from 'react';
+
+
+#useEffect
+snippet ue
+	useEffect(()=>{
+		${2}
+		},[${1}]
+	)
+
+#useState 
+snippet us
+	const [${1},${2:set${1}}] = useState(${3});
+
+# ~ react

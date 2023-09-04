@@ -10,7 +10,10 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'rust-lang/rust.vim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
-Plug 'folke/tokyonight.nvim', {'branch':'main'}
+Plug 'folke/tokyonight.nvim'
+Plug 'tpope/vim-surround'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 
 call plug#end()
@@ -30,6 +33,7 @@ set autoindent
 set smartindent
 set expandtab
 set shiftwidth=4
+
 set hlsearch
 set incsearch
 set ignorecase
@@ -37,7 +41,12 @@ set smartcase
 set showmatch
 set showmode
 
+colorscheme tokyonight
 
-colorscheme tokyonignt-day
 autocmd VimEnter * NERDTree
 
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetDirectories=["~/.config/nvim/snippets"]

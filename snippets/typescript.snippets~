@@ -1,0 +1,29 @@
+# react function componentt
+snippet rfc
+	const ${1:FunctionName}:React.FC = (${2:props}) => {
+		${4}
+		return (
+			${3:<></>}
+		);
+	}
+
+# export default react function componnent
+snippet erfc
+	export default const ${1:FunctionName}:React.FC = (${2:props}) => {
+		${4}
+		return (
+			${3:<></>}
+		);
+	}
+
+# import React
+snippet ir
+	import React from 'react';
+
+
+#useEffect
+snippet ue
+	useEffect(()=>{
+		${2}
+		},[${1}]
+	)
